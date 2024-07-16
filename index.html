@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Web Calculator</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        
+        <!-- Calculator Container -->
+        <div id="calculator">
+
+            <!-- Input Display -->
+            <input id="display" readonly>
+
+            <!-- Keypads -->
+            <div id="keypads">
+                <button onclick="showToDisplay('+')" class="keypads-btn-operator">+</button>
+                <button onclick="showToDisplay('7')">7</button>
+                <button onclick="showToDisplay('8')">8</button>
+                <button onclick="showToDisplay('9')">9</button>
+                <button onclick="showToDisplay('-')" class="keypads-btn-operator">-</button>
+                <button onclick="showToDisplay('4')">4</button>
+                <button onclick="showToDisplay('5')">5</button>
+                <button onclick="showToDisplay('6')">6</button>
+                <button onclick="showToDisplay('*')" class="keypads-btn-operator">*</button>
+                <button onclick="showToDisplay('1')">1</button>
+                <button onclick="showToDisplay('2')">2</button>
+                <button onclick="showToDisplay('3')">3</button>
+                <button onclick="showToDisplay('/')" class="keypads-btn-operator">/</button>
+                <button onclick="showToDisplay('0')">0</button>
+                <button onclick="showToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()" class="keypads-btn-operator">C</button>
+                <button onclick="backspace()" id="back">Back</button>
+            </div>
+        </div>
+        
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

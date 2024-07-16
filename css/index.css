@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(../images/flag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+}
+
+#display{
+    width: 100%;
+    padding: 15px;
+    font-size: 4rem;
+    border: none;
+    text-align: left;
+    margin: 0;
+    background-color: hsl(0, 12%, 91%);
+    color: hsl(0, 100%, 55%);
+    overflow: scroll;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+#keypads{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    /* border: 1px solid white; */
+}
+
+#calculator{
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 80%, 37%);
+    border-radius: 30px;
+
+    max-width: 500px;
+    overflow:hidden;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    font-size: 35px;
+    border-radius: 50px;
+    background-color: rgb(192, 83, 83);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 46%, 64%)
+}
+
+button:active{
+    background-color: hsl(0, 46%, 74%)
+}
+
+.keypads-btn-operator{
+    background-color: hsl(0, 100%, 55%);
+}
+
+.keypads-btn-operator:hover{
+    background-color: hsl(0, 100%, 75%);
+}
+
+.keypads-btn-operator:active{
+    background-color: hsl(0, 100%, 85%);
+}
+
+#back{
+    font-size: 30px;
+}
+
+
+
