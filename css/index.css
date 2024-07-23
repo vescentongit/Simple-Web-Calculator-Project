@@ -79,5 +79,9 @@ button:active{
     font-size: 30px;
 }
 
-
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
 
